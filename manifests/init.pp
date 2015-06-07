@@ -12,7 +12,7 @@ class apache {
 
   file { "/etc/httpd/${app_name}.vhost":
     ensure => file,
-    content => template('apache.vhost.erb')
+    content => template('apache.vhost.erb'),
     owner   => root,
     group   => root,
     mode    => 644,
