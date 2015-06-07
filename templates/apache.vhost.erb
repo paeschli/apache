@@ -1,7 +1,7 @@
 <VirtualHost *:80>
   ServerAlias www.<%= @app_name %>.eng.zkb.ch
  
-  DocumentRoot /usr/webapps<%= @app_name %>
+  DocumentRoot /usr/webapps/<%= @app_name %>
  
   <Directory /usr/webapps/<%= @app_name %>>
     AllowOverride All
