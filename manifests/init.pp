@@ -7,6 +7,7 @@ class apache {
   }
 
   service { 'httpd':
+    require => Package['httpd'],
     ensure => running,
   }
 
